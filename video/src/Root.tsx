@@ -2,12 +2,23 @@ import "./index.css";
 import { Composition } from "remotion";
 import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
+import { Reel, REEL_DURATION } from "./Reel";
 
 // Each <Composition> is an entry in the sidebar!
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        // Vertical before/after marketing reel (V1 fail -> V10 send)
+        id="Reel"
+        component={Reel}
+        durationInFrames={REEL_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
       <Composition
         // You can take the "id" to render a video:
         // npx remotion render HelloWorld
