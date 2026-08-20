@@ -223,7 +223,7 @@ const EndCard: React.FC = () => {
 export const Ad: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: BRAND.ink }}>
     {/* One pre-mixed track: original score + voiceover, ducked and limited. */}
-    <Audio src={staticFile("v3/master.m4a")} />
+    <Audio src={staticFile("v3/master.mp3")} />
 
     {SHOTS.map((s) => (
       <Sequence key={s.at} from={S(s.at)} durationInFrames={S(s.dur)}>
