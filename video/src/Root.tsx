@@ -3,13 +3,23 @@ import { Composition } from "remotion";
 import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
 import { Reel, REEL_DURATION } from "./Reel";
-import { Ad, AD_DURATION } from "./Ad";
+import { Ad, Ad15, AD_DURATION, AD15_DURATION } from "./Ad";
 
 // Each <Composition> is an entry in the sidebar!
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        // 15s paid cut — same grid, tighter; sized for feed/story placements
+        id="Ad15"
+        component={Ad15}
+        durationInFrames={AD15_DURATION}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
       <Composition
         // The ad: beat-locked cut, original score, burned-in captions
         id="Ad"
