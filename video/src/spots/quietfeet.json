@@ -19,6 +19,12 @@
    "gain": 0.08
   },
   {
+   "at": 8.0,
+   "dur": 4.0,
+   "src": "quietfeet/contact.mp4",
+   "gain": 0.08
+  },
+  {
    "at": 12.0,
    "dur": 3.0,
    "src": "quietfeet/drive.mp4",

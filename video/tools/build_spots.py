@@ -63,9 +63,11 @@ ADAPT = {
         (4.0, 2.0, clip("answers", "screen1", 102.6, 2.0, kind="screen", bias=0.26), {}),
         (6.0, 3.0, clip("typing", "screen1", 112.5, 3.0, kind="screen", bias=0.10), {}),
         (9.0, 2.0, clip("submit", "screen1", 116.9, 2.0, kind="screen", bias=0.34), {}),
-        (11.0, 2.0, clip("saved", "screen1", 119.5, 2.0, kind="screen", bias=0.0), {}),
-        (13.0, 2.0, clip("plan", "screen1", 45.2, 2.0, kind="screen", bias=0.15),
-         {"push": [1.0, 1.06]}),
+        # the confirmation toast is only readable for about a second before the
+        # app navigates on underneath it
+        (11.0, 1.0, clip("saved", "screen1", 119.5, 1.0, kind="screen", bias=0.0), {}),
+        (12.0, 3.0, clip("plan", "screen1", 44.8, 3.0, kind="screen", bias=0.15),
+         {"push": [1.0, 1.08]}),
         (15.0, 2.5, clip("send", CAM["send"], 24.0, 2.5, kind="cam", x=0.60, y=0.5, zoom=1.4),
          {"gain": 0.07}),
     ],
@@ -134,13 +136,14 @@ FUEL = {
     "shots": [
         (0.0, 2.0, clip("hook", CAM["gym"], 26.0, 2.0, kind="cam", x=0.5, y=0.10, zoom=1.3),
          {"gain": 0.06, "push": [1.0, 1.06]}),
-        (2.0, 2.0, clip("logged", "screen1", 146.6, 2.0, kind="screen", bias=0.12), {}),
-        (4.0, 2.0, clip("goals", "screen1", 149.3, 2.0, kind="screen", bias=0.30), {}),
+        (2.0, 2.0, clip("logged", "screen1", 142.8, 2.0, kind="screen", bias=0.12), {}),
+        (4.0, 2.0, clip("goals", "screen1", 147.2, 2.0, kind="screen", bias=0.30), {}),
         (6.0, 3.0, clip("plan", "screen1", 151.9, 3.0, kind="screen", bias=0.62),
          {"push": [1.0, 1.10]}),
-        (9.0, 2.5, clip("meals", "screen1", 154.6, 2.5, kind="screen", bias=0.85), {}),
+        (9.0, 2.5, clip("meals", "screen1", 156.0, 2.5, kind="screen", bias=0.55), {}),
         (11.5, 2.0, clip("refresh", "screen1", 166.3, 2.0, kind="screen", bias=0.30), {}),
-        (13.5, 2.0, clip("out", CAM["gym"], 30.2, 2.0, kind="cam", x=0.5, y=0.2, zoom=1.25),
+        # bookends the hook: same wall, same light, two seconds later
+        (13.5, 2.0, clip("out", CAM["gym"], 28.8, 2.0, kind="cam", x=0.5, y=0.10, zoom=1.3),
          {"gain": 0.07}),
     ],
     "vo": [

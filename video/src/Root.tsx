@@ -6,6 +6,7 @@ import { Reel, REEL_DURATION } from "./Reel";
 import { Ad, Ad15, AD_DURATION, AD15_DURATION } from "./Ad";
 import { Spot, S } from "./Spot";
 import { SPOTS } from "./spots";
+import { Contact, CONTACT_SECONDS } from "./Contact";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -25,6 +26,17 @@ export const RemotionRoot: React.FC = () => {
           height={1920}
         />
       ))}
+
+      <Composition
+        // The explainer diagram cut into the Quiet Feet tip. Rendered on its
+        // own, then dropped into public/quietfeet/contact.mp4.
+        id="Contact"
+        component={Contact}
+        durationInFrames={S(CONTACT_SECONDS)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
 
       <Composition
         // 15s paid cut — same grid, tighter; sized for feed/story placements

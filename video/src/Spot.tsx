@@ -164,8 +164,8 @@ const Captions: React.FC<{ spot: SpotDef }> = ({ spot }) => {
           bottom: lift - 150,
           height: 400,
           background:
-            "linear-gradient(to bottom, rgba(10,10,11,0) 0%, rgba(10,10,11,0.62) 38%," +
-            " rgba(10,10,11,0.62) 66%, rgba(10,10,11,0) 100%)",
+            "linear-gradient(to bottom, rgba(10,10,11,0) 0%, rgba(10,10,11,0.5) 42%," +
+            " rgba(10,10,11,0.5) 64%, rgba(10,10,11,0) 100%)",
         }}
       />
       <div

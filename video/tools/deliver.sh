@@ -9,7 +9,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 FF="npx remotion ffmpeg -hide_banner -loglevel error -y"
-mkdir -p out out/delivery
+mkdir -p out out/delivery deliverables
 
 render() { # composition, delivered filename
   echo "→ $1"
@@ -20,7 +20,8 @@ render() { # composition, delivered filename
     -pix_fmt yuv420p -movflags +faststart \
     -c:a aac -b:a 160k -ar 48000 -ac 2 \
     "out/delivery/$2"
-  echo "  out/delivery/$2  $(du -h "out/delivery/$2" | cut -f1)"
+  cp "out/delivery/$2" "deliverables/$2"
+  echo "  deliverables/$2  $(du -h "out/delivery/$2" | cut -f1)"
 }
 
 render Adapt     ClimbSmarter_01_It-Adapts_20s.mp4
