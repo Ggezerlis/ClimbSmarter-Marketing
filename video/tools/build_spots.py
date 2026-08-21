@@ -72,11 +72,13 @@ ADAPT = {
          {"gain": 0.07}),
     ],
     "vo": [
-        {"id": "a", "at": 2.15, "text": "This one asks how your week actually went."},
-        {"id": "b", "at": 4.85, "text": "Not just whether you finished it. Did it feel weak?"},
-        {"id": "c", "at": 8.25, "text": "You answer the rest in your own words."},
-        {"id": "d", "at": 10.85, "text": "And next week gets rebuilt around it."},
-        {"id": "e", "at": 15.25, "text": "It's not a PDF. It's paying attention."},
+        # Nobody watching this has heard of ClimbSmarter, so the first line
+        # names it and says what it is before any "it" appears.
+        {"id": "a", "at": 2.15, "text": "ClimbSmarter writes your climbing training plan."},
+        {"id": "b", "at": 5.05, "text": "Then it asks how the week actually went. Did it feel weak?"},
+        {"id": "c", "at": 8.85, "text": "You answer in your own words."},
+        {"id": "d", "at": 11.05, "text": "And next week gets rebuilt around it."},
+        {"id": "e", "at": 15.15, "text": "Not a PDF. A coach that's paying attention."},
     ],
     "score": dict(
         bars=10, silent_bars={0}, groove_from=2,
@@ -109,12 +111,13 @@ ASK = {
          {"push": [1.0, 1.05]}),
     ],
     "vo": [
-        {"id": "a", "at": 2.15, "text": "I asked it how to warm up for hangboard."},
-        {"id": "b", "at": 5.15,
-         "text": "Five rounds. Cruise the first three with perfect form, then bump it a notch."},
-        {"id": "c", "at": 10.55,
-         "text": "And then this. On every move, exhale, and place your feet silently."},
-        {"id": "d", "at": 15.90, "text": "If you hear a stomp, drop a grade."},
+        {"id": "a", "at": 2.05, "text": "ClimbSmarter's a climbing app with a coach in it."},
+        {"id": "b", "at": 5.15, "text": "So I asked it how to warm up for hangboard."},
+        {"id": "c", "at": 8.15,
+         "text": "Five rounds. Cruise the first three, then bump it a notch."},
+        {"id": "d", "at": 12.55,
+         "text": "And then this. Exhale, and place your feet silently."},
+        {"id": "e", "at": 16.15, "text": "Hear a stomp? Drop a grade."},
     ],
     "score": dict(
         bars=10, silent_bars={0}, groove_from=1,
@@ -147,12 +150,12 @@ FUEL = {
          {"gain": 0.07}),
     ],
     "vo": [
-        {"id": "a", "at": 2.15, "text": "It doesn't just tell you what to climb."},
-        {"id": "b", "at": 4.45,
-         "text": "Log what you ate, and it tracks it against the day it planned for you."},
-        {"id": "c", "at": 8.75, "text": "Protein oats. Banana and rice cakes an hour out."},
+        {"id": "a", "at": 2.15, "text": "ClimbSmarter plans your climbing training."},
+        {"id": "b", "at": 4.75, "text": "It plans what you eat around it, too."},
+        {"id": "c", "at": 7.35,
+         "text": "Protein oats. Banana and rice cakes an hour out. Actual grams."},
         {"id": "d", "at": 12.35, "text": "Don't like it? Regenerate it."},
-        {"id": "e", "at": 14.65, "text": "One app. Both halves."},
+        {"id": "e", "at": 14.55, "text": "One app. Both halves."},
     ],
     "score": dict(
         bars=9, silent_bars={0}, groove_from=1,
@@ -202,11 +205,14 @@ GRIND = {
     ],
     "vo": [
         {"id": "a", "at": 2.15, "text": "Board limit practice. Three problems, five attempts each."},
+        # No app UI in this spot at all, so the product gets named here, in the
+        # middle, where the caption is still on screen - at the end it would be
+        # buried under the end card.
         {"id": "b", "at": 6.55,
-         "text": "That's the whole session. Try something just out of reach, on purpose."},
+         "text": "That's what ClimbSmarter put in today's plan. Something just out of reach, on purpose."},
         {"id": "c", "at": 12.35,
          "text": "You're not meant to send it today. You're meant to get closer."},
-        {"id": "d", "at": 17.6, "text": "And then one day, it goes."},
+        {"id": "d", "at": 16.05, "text": "And then one day, it goes."},
     ],
     "score": dict(
         bars=11, silent_bars={0}, groove_from=1,
@@ -239,7 +245,7 @@ QUIET = {
                         x=0.45, y=0.45, zoom=1.15), {"gain": 0.08}),
         (12.0, 3.0, clip("drive", CAM["m1366"], 21.6, 3.0, kind="cam", x=0.10, y=0.35, zoom=1.25),
          {"gain": 0.08}),
-        (15.0, 3.0, clip("cue", "screen1", 27.2, 3.0, kind="screen", bias=0.34),
+        (15.0, 3.5, clip("cue", "screen1", 27.0, 3.5, kind="screen", bias=0.34),
          {"push": [1.0, 1.12]}),
     ],
     "vo": [
@@ -249,8 +255,8 @@ QUIET = {
         # over the explainer animation
         {"id": "c", "at": 8.65,
          "text": "A stomp bounces you off the hold. A quiet placement presses into it."},
-        {"id": "d", "at": 13.55, "text": "Place it once. Then trust it."},
-        {"id": "e", "at": 15.95, "text": "That cue is straight out of my coaching app."},
+        {"id": "d", "at": 13.25, "text": "Place it once. Then trust it."},
+        {"id": "e", "at": 16.15, "text": "That's from ClimbSmarter. It plans my climbing."},
     ],
     "score": dict(
         bars=10, silent_bars={0}, groove_from=1,

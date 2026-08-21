@@ -9,6 +9,12 @@ Safari chrome cropped off; the climbing is your own gym footage, tone-mapped off
 the iPhone's HDR so it doesn't come out grey. The music is written for these
 edits rather than licensed, so there are no rights attached to any of them.
 
+**All five assume the viewer has never heard of ClimbSmarter.** The product is
+named and the category stated in the first spoken line of every spot — before
+any "it" appears — and every end card carries *AI climbing coach* above the
+wordmark. That constraint is why the reads are worded the way they are; if you
+rewrite one, keep the noun before the pronoun.
+
 ---
 
 ## 1. It Adapts — 20s · paid
@@ -34,11 +40,11 @@ can watch it happen.
 | 17.5–20 | end card |
 
 **Voiceover**
-> This one asks how your week actually went. Not just whether you finished it —
-> did it feel weak? You answer the rest in your own words. And next week gets
-> rebuilt around it. It's not a PDF. It's paying attention.
+> ClimbSmarter writes your climbing training plan. Then it asks how the week
+> actually went — did it feel weak? You answer in your own words. And next week
+> gets rebuilt around it. Not a PDF. A coach that's paying attention.
 
-**End card:** *It doesn't just track* / It asks. Then it rewrites the plan.
+**End card:** *AI climbing coach* / It asks. Then it rewrites the plan.
 
 ---
 
@@ -48,7 +54,7 @@ can watch it happen.
 This is one genuine exchange, unedited.
 
 **Hook (0–2s):** you walk straight past the lens.
-> TWO YEARS OF GUESSING / So I just **asked it.**
+> TWO YEARS OF GUESSING / So I asked my **climbing app.**
 
 **Beat sheet**
 
@@ -62,14 +68,14 @@ This is one genuine exchange, unedited.
 | 17.5–20 | end card |
 
 **Voiceover**
-> I asked it how to warm up for hangboard. Five rounds — cruise the first three
-> with perfect form, then bump it a notch. And then this: on every move, exhale,
-> and place your feet silently. If you hear a stomp, drop a grade.
+> ClimbSmarter's a climbing app with a coach in it. So I asked it how to warm up
+> for hangboard. Five rounds — cruise the first three, then bump it a notch. And
+> then this: exhale, and place your feet silently. Hear a stomp? Drop a grade.
 
 That last line is quoted off your screen, not written for the ad. That's the
 whole reason this one works.
 
-**End card:** *A coach in the app* / Ask it anything. Any time.
+**End card:** *AI climbing coach* / Ask it anything. Any time.
 
 ---
 
@@ -96,11 +102,11 @@ is the best cold-audience option of the four.
 | 15.5–18 | end card |
 
 **Voiceover**
-> It doesn't just tell you what to climb. Log what you ate, and it tracks it
-> against the day it planned for you. Protein oats. Banana and rice cakes an
-> hour out. Don't like it? Regenerate it. One app. Both halves.
+> ClimbSmarter plans your climbing training. It plans what you eat around it,
+> too. Protein oats. Banana and rice cakes an hour out — actual grams. Don't
+> like it? Regenerate it. One app. Both halves.
 
-**End card:** *Training + nutrition* / One plan. Both halves.
+**End card:** *AI climbing coach* / Training and food. One plan.
 
 ---
 
@@ -117,11 +123,17 @@ beat, then you walk past the lens as a natural wipe into the send at 12s, which
 runs to the top.
 
 **Voiceover**
-> Board limit practice. Three problems, five attempts each. That's the whole
-> session — try something just out of reach, on purpose. You're not meant to send
-> it today. You're meant to get closer. And then one day, it goes.
+> Board limit practice. Three problems, five attempts each. That's what
+> ClimbSmarter put in today's plan — something just out of reach, on purpose.
+> You're not meant to send it today. You're meant to get closer. And then one
+> day, it goes.
 
-**End card:** *Built around your project* / Stop guessing. Start sending.
+This is the one spot with no app UI in it, so that second line is the only place
+a cold viewer learns what is being sold. It sits mid-spot rather than at the end
+on purpose: at the end its caption would be buried under the end card, and the
+name has to be *read*, not only heard.
+
+**End card:** *AI climbing coach* / It plans the session. You do the work.
 
 ---
 
@@ -147,8 +159,8 @@ it teaches one thing and plugs softly at the end. Post it, don't boost it.
 **Voiceover**
 > Don't stomp it. Look at the hold, and place the toe once. Shuffle or re-grip,
 > and your fingers pay for it. A stomp bounces you off the hold; a quiet
-> placement presses into it. Place it once. Then trust it. That cue is straight
-> out of my coaching app.
+> placement presses into it. Place it once. Then trust it. That's from
+> ClimbSmarter — it plans my climbing.
 
 **End card:** *Quiet feet · Tip 01* / Want more coaching like this?
 

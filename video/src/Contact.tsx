@@ -25,8 +25,6 @@ const HOLD_TIP = 560;
 const HOLD_BOTTOM = 700;
 const LEDGE_Y = 480;              // the standing surface
 
-const SHOE_W = 340;
-const SHOE_H = 150;
 const TOE_X = 300;                // where the toe ends up once it is on
 
 const label: React.CSSProperties = {
@@ -38,7 +36,7 @@ const label: React.CSSProperties = {
 /**
  * Climbing shoe in profile, toe to the left, drawn so its sole is the line
  * y = 0 and its toe tip is x = 0 - which makes "standing on the hold" just
- * translate(TOE_X, LEDGE_Y).
+ * translate(TOE_X, LEDGE_Y). It is 340 x 150 at rest.
  */
 const Shoe: React.FC<{ x: number; y: number; rot: number }> = ({ x, y, rot }) => (
   <g transform={`translate(${x} ${y}) rotate(${rot})`}>

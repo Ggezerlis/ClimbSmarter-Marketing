@@ -50,10 +50,10 @@ export const ADAPT = spot("adapt", adaptData as Built, {
   flashes: [{ at: 2.0, amp: 0.4 }, { at: 15.0, amp: 0.34 }],
   end: {
     at: 17.5,
-    kicker: "IT DOESN'T JUST TRACK",
+    kicker: "AI CLIMBING COACH",
     line1: "It asks. Then it",
     line2: "rewrites the plan.",
-    sub: "14 days free · no card",
+    sub: "Training plans that adapt · 14 days free, no card",
   },
 });
 
@@ -65,18 +65,18 @@ export const ASK = spot("ask", askData as Built, {
       at: 0.15,
       dur: 1.85,
       kicker: "TWO YEARS OF GUESSING",
-      text: "So I just\n*asked it.*",
+      text: "So I asked\nmy *climbing app.*",
       y: "mid",
-      size: 120,
+      size: 104,
     },
   ],
   flashes: [{ at: 2.0, amp: 0.38 }, { at: 11.0, amp: 0.34 }],
   end: {
     at: 17.5,
-    kicker: "A COACH IN THE APP",
+    kicker: "AI CLIMBING COACH",
     line1: "Ask it anything.",
     line2: "Any time.",
-    sub: "14 days free · no card",
+    sub: "Training plans that adapt · 14 days free, no card",
   },
 });
 
@@ -96,10 +96,10 @@ export const FUEL = spot("fuel", fuelData as Built, {
   flashes: [{ at: 2.0, amp: 0.38 }, { at: 13.5, amp: 0.34 }],
   end: {
     at: 15.5,
-    kicker: "TRAINING + NUTRITION",
-    line1: "One plan.",
-    line2: "Both halves.",
-    sub: "14 days free · no card",
+    kicker: "AI CLIMBING COACH",
+    line1: "Training and food.",
+    line2: "One plan.",
+    sub: "Climbing plans that adapt · 14 days free, no card",
   },
 });
 
@@ -119,16 +119,16 @@ export const GRIND = spot("grind", grindData as Built, {
   flashes: [{ at: 2.0, amp: 0.36 }, { at: 12.0, amp: 0.55 }],
   end: {
     at: 19.5,
-    kicker: "BUILT AROUND YOUR PROJECT",
-    line1: "Stop guessing.",
-    line2: "Start sending.",
-    sub: "14 days free · no card",
+    kicker: "AI CLIMBING COACH",
+    line1: "It plans the session.",
+    line2: "You do the work.",
+    sub: "Training plans that adapt · 14 days free, no card",
   },
 });
 
 export const QUIETFEET = spot("quietfeet", quietfeetData as Built, {
   seconds: 20,
-  quiet: [[0, 2.0], [18.0, 20]],
+  quiet: [[0, 2.0], [18.5, 20]],
   beats: [
     {
       at: 0.15,
@@ -141,12 +141,12 @@ export const QUIETFEET = spot("quietfeet", quietfeetData as Built, {
   ],
   flashes: [{ at: 2.0, amp: 0.34 }],
   end: {
-    at: 18.0,
+    at: 18.5,
     soft: true,
     kicker: "QUIET FEET · TIP 01",
     line1: "Want more",
     line2: "coaching like this?",
-    sub: "Your plan is built out of them",
+    sub: "The climbing app that plans your training",
   },
 });
 
