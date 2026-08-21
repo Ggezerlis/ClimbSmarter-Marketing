@@ -238,11 +238,11 @@ QUIET = {
          {"gain": 0.08}),
         (5.0, 3.0, clip("place2", CAM["m1365"], 16.8, 3.0, kind="cam", x=0.45, y=0.45, zoom=1.2),
          {"gain": 0.08}),
-        # The explainer animation goes here. tools/cut_anim.py overwrites this
-        # clip with the recorded animation; until it does, the slot holds real
-        # footage of the same thing so the spot is never left with a hole.
-        (8.0, 4.0, clip("contact", CAM["m1364"], 26.2, 4.0, kind="cam",
-                        x=0.45, y=0.45, zoom=1.15), {"gain": 0.08}),
+        # The explainer diagram, rendered from src/Contact.tsx rather than cut
+        # from footage. It has to be built here rather than dropped in by hand
+        # afterwards: a later --clips run regenerates every clip in the spot,
+        # and it would quietly overwrite a hand-placed file with b-roll.
+        (8.0, 4.0, clip("contact", "Contact", 0.0, 4.0, kind="render"), {}),
         (12.0, 3.0, clip("drive", CAM["m1366"], 21.6, 3.0, kind="cam", x=0.10, y=0.35, zoom=1.25),
          {"gain": 0.08}),
         (15.0, 3.5, clip("cue", "screen1", 27.0, 3.5, kind="screen", bias=0.34),
@@ -281,7 +281,22 @@ def cut_clips(spot):
     os.makedirs(out, exist_ok=True)
     for at, dur, c, _ in spot["shots"]:
         dst = os.path.join(out, c["name"] + ".mp4")
-        path = prep.resolve(c["src"])
+        if c["kind"] != "render":
+            path = prep.resolve(c["src"])
+        if c["kind"] == "render":
+            raw = os.path.join("/tmp", f"render_{c['src']}.mp4")
+            subprocess.run(
+                ["npx", "remotion", "render", c["src"], raw,
+                 "--codec=h264", "--crf=16", "--log=error"],
+                cwd=VIDEO, check=True)
+            prep.run(prep.FF + [
+                "-i", raw, "-t", str(c["t"]),
+                "-vf", f"scale={prep.W}:{prep.H}:flags=lanczos,format=yuv420p",
+                "-r", "30", "-c:v", "libx264", "-preset", "slow", "-crf", "17",
+                "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-an", dst])
+            print(f"  {spot['slug']}/{c['name']}.mp4  {c['t']}s  (rendered {c['src']})")
+            continue
+
         if c["kind"] == "screen":
             vf, edges = prep.screen_filter(path, c["ss"] + c["t"] / 2,
                                            c.get("bias", 0.0), span=c["t"] * 0.9)
