@@ -4,12 +4,28 @@ import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
 import { Reel, REEL_DURATION } from "./Reel";
 import { Ad, Ad15, AD_DURATION, AD15_DURATION } from "./Ad";
+import { Spot, S } from "./Spot";
+import { SPOTS } from "./spots";
 
 // Each <Composition> is an entry in the sidebar!
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* The five spots. Each is data in src/spots + a master mix in public. */}
+      {SPOTS.map((spot) => (
+        <Composition
+          key={spot.slug}
+          id={spot.slug.charAt(0).toUpperCase() + spot.slug.slice(1)}
+          component={Spot}
+          defaultProps={{ spot }}
+          durationInFrames={S(spot.seconds)}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+      ))}
+
       <Composition
         // 15s paid cut — same grid, tighter; sized for feed/story placements
         id="Ad15"
